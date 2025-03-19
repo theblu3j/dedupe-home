@@ -1,0 +1,14 @@
+# https://wiki.gbe0.com/en/linux/snippets/btrfs-deduplicate
+
+[Unit]
+Description=Deduplicate BTRFS file system directories
+
+[Service]
+Type=oneshot
+TimeoutSec=3600
+TimeoutStartSec=3600
+TimeoutStopSec=3600
+ExecStart=/usr/bin/duperemove -hdr --hashfile=%h/.duperemove %h
+
+[Install]
+WantedBy=default.target
