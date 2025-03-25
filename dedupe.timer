@@ -6,7 +6,7 @@ RefuseManualStart=no
 RefuseManualStop=no
 
 [Timer]
-OnCalendar=weekly
+OnCalendar=Sat 20:00
 Persistent=true
 RandomizedDelaySec=7200
 Unit=dedupe.service
