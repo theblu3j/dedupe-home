@@ -5,6 +5,7 @@ Description=Deduplicate BTRFS file system directories
 
 [Service]
 Type=oneshot
+Nice=10
 TimeoutSec=3600
 TimeoutStartSec=3600
 TimeoutStopSec=3600
